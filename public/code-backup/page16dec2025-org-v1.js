@@ -8,35 +8,16 @@ import { MessageSquare, X, Send, Mic, Volume2, ThumbsUp, ThumbsDown, Grid3x3, Us
 // --- CHATBOT DATA & COMPONENTS ---
 
 const chatFAQ = {
-  "What is AI Universe?": "AI Universe is an innovative platform dedicated to integrating artificial intelligence into everyday life. We focus on three main pillars: next-generation commerce, holistic family well-being, and predictive system intelligence, aiming to create a smarter, more connected world.",
-  "Who are the founders of AI Universe?": "AI Universe was founded by visionary leaders in technology and artificial intelligence by Janvi and Gagan, committed to pioneering advancements that enhance daily living through intelligent solutions.",
-  "How many universes does AI Universe have so far?": "AI Universe encompasses three primary universes: the AI eCommerce Universe, the AI Family Universe, and the AI Intelligence Universe. Each universe is designed to address specific aspects of life and technology through advanced AI integration.",
   "What is AI Universe Global?": "AI Universe Global is a pioneering technology firm engineering a smarter future. We build intelligent ecosystems that seamlessly integrate with daily life, focusing on next-generation commerce, holistic family well-being, and predictive system intelligence.",
-  "Tell me about the AI Family Universe.": "Our AI Family Hub Universe is a revolutionary connected platform for modern families. It harmonizes creative engagement with daily life, offering real-time insights to empower the holistic development of children like our digital companions, Janvi and Gagan.",
-  "How does AI Shoping Hub Universe work?": "Our AI Shopping Hub Universe transforms every click into a perfectly tailored experience. Powered by a deep artificial intelligence engine, this next-generation commerce platform doesn't just sell—it anticipates your needs and delivers truly personalized shopping journeys, creating a frictionless experience for both businesses and consumers.",
-  "What is AI Intelligence Universe?": "The AI Intelligence Hub Universe is our advanced platform providing a real-time, machine learning-powered pulse on complex digital systems. It moves beyond reactive monitoring to offer predictive insights, ensuring peak performance and operational stability.",
+  "Tell me about the AI Family Universe.": "The AI Family Universe is a revolutionary connected platform for modern families. It harmonizes education, wellness, and creative engagement, offering real-time insights to empower the holistic development of children like our digital companions, Janvi and Gagan.",
+  "How does AI eCommerce Universe work?": "Our AI eCommerce Universe redefines retail by infusing it with deep intelligence. The platform automates complex billing, optimizes hyperlocal logistics, and delivers truly personalized shopping journeys, creating a frictionless experience for both businesses and consumers.",
+  "What is AI Intelligence Universe?": "The AI Intelligence Universe is our advanced platform providing a real-time, machine learning-powered pulse on complex digital systems. It moves beyond reactive monitoring to offer predictive insights, ensuring peak performance and operational stability.",
   "When is the official launch?": "We are on the brink of a major reveal! The countdown on our site marks a significant milestone on our journey to launch. Stay tuned for an exciting announcement.",
-  "How can I stay updated with AI Universe news?": "To stay updated with the latest news and developments from AI Universe, you can follow us on our social media channels such as Twitter and LinkedIn, or subscribe to our newsletter on our website.",
-  "How can I contact AI Universe for support?": "For support or inquiries, you can use of adviced artificial intelligence chatbot agent integrated with our website www.aiuniglobal.com or reach out to us through the contact form on our website or email us directly at support@aiuniglobal.com",
-  "Are there career opportunities at AI Universe?": "Yes, AI Universe is always looking for talented individuals passionate about artificial intelligence and innovation. You can check our careers page on our website for current job openings and application details.",
-  "What technologies does AI Universe use?": "AI Universe leverages cutting-edge technologies including machine learning, natural language processing, computer vision, and advanced data analytics to build intelligent systems that enhance commerce, family life, and digital infrastructure.",
-  "Is AI Universe suitable for businesses of all sizes?": "Absolutely! AI Universe is designed to cater to businesses of all sizes, from startups to large enterprises. Our scalable AI solutions can be tailored to meet the unique needs of each business, helping them leverage artificial intelligence for growth and efficiency.",
-  "How many branches will AI Universe launch?" : "We are thrilled to announce that AI Universe will make its debut in two strategic markets: India and Malaysia. Our commitment is to employee well-being and peak productivity, which is why these flagship locations will not merely be offices, but modern, sophisticated hubs of innovation. Each will be meticulously designed with future-native facilities and amenities to ensure our team members experience a premium, high-class work environment that fosters creativity and collaboration.",
-  "What is the mission of AI Universe?": "The mission of AI Universe is to empower innovation through artificial intelligence by creating intelligent ecosystems that enhance commerce, family well-being, and digital infrastructure, ultimately improving the quality of life for individuals and communities worldwide.",
-  "How can I get involved with AI Universe?": "You can get involved with AI Universe by following us on social media, subscribing to our newsletter, participating in our community forums, or exploring career opportunities with us. We welcome collaboration and engagement from individuals and organizations passionate about artificial intelligence and innovation.",
-  "What makes AI Universe different from other AI companies?": "AI Universe stands out due to its holistic approach to integrating artificial intelligence into everyday life. We focus on three key pillars—commerce, family well-being, and system intelligence—creating interconnected ecosystems that address real-world challenges. Our commitment to innovation, user-centric design, and ethical AI practices sets us apart in the industry.",
-  "Where can I find more information about AI Universe?": "For more information about AI Universe, please visit our official website at www.aiuniglobal.com. You can also follow us on our social media channels and subscribe to our newsletter for the latest updates and insights.",
-  "What are the future plans for AI Universe?": "AI Universe is committed to continuous innovation and expansion. Our future plans include launching new AI-powered products and services, expanding into additional markets, and forming strategic partnerships to further our mission of integrating artificial intelligence into everyday life. Stay tuned for exciting developments as we continue to evolve and grow.",
-  "How does AI Universe ensure data privacy and security?": "AI Universe prioritizes data privacy and security by implementing robust measures such as encryption, secure data storage, and strict access controls. We adhere to industry best practices and comply with relevant regulations to protect user data and maintain trust. Our commitment to ethical AI practices ensures that user privacy is respected at all times.",
-  "Can I provide feedback to AI Universe?": "Yes, we highly value feedback from our users and community. You can provide feedback through our website's contact form, social media channels, or by reaching out to us via email at feedback@aiuniglobal.com. Your insights help us improve our products and services.",
-  "Does AI Universe offer partnerships or collaborations?": "Yes, AI Universe is open to partnerships and collaborations with individuals, organizations, and businesses that share our vision for advancing artificial intelligence. If you are interested in exploring partnership opportunities, please contact us through our website or email us at support@aiuniglobal.com.",
-  "What industries does AI Universe serve?": "AI Universe serves a wide range of industries including e-commerce, education, healthcare, finance, and technology. Our AI solutions are designed to be versatile and adaptable, allowing us to address the unique challenges and opportunities within various sectors.",
-  "How can I learn more about AI and its applications?": "To learn more about artificial intelligence and its applications, you can explore resources such as online courses, webinars, industry blogs, and research papers. AI Universe also provides educational content and updates on our website and social media channels to help you stay informed about the latest developments in AI technology.",
 };
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState([{ id: 1, sender: 'bot', text: 'Hello! I am JanviGagan, an integrated AI agent. How can I help you today? Ask me a question or choose from the suggestions.' }]);
+  const [messages, setMessages] = useState([{ id: 1, sender: 'bot', text: 'Hello! How can I help you today? Ask me a question or choose from the suggestions.' }]);
   const [inputValue, setInputValue] = useState('');
   const chatBoxRef = useRef(null);
 
@@ -287,7 +268,7 @@ const CountdownTimer = () => {
   });
 
   return (
-    <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 0.5 }} className="hidden md:flex items-center">
+    <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 0.5 }} className="hidden lg:flex items-center">
       <div className="flex items-center gap-3 p-2 rounded-lg bg-white/60 shadow-inner w-[210px] justify-center">
         {isClient && timerComponents.length ? timerComponents : <div className="h-7 w-48"></div>}
       </div>
@@ -327,9 +308,9 @@ const Header = () => {
             <button className="hidden md:flex items-center gap-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors">
               <LogIn size={16} /> Login
             </button>
-            {/* <button className="hidden md:flex items-center gap-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors">
+            <button className="hidden md:flex items-center gap-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors">
               <UserPlus size={16} /> Create Account
-            </button> */}
+            </button>
             <div className="relative">
               <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="h-10 w-10 p-2 rounded-full hover:bg-zinc-200 transition-colors flex justify-center items-center">
                 <motion.div
@@ -352,11 +333,11 @@ const Header = () => {
                     className="absolute top-12 right-0 w-80 origin-top-right rounded-lg border border-zinc-200 bg-white p-4 shadow-xl"
                   >
                     <div className="grid grid-cols-3 gap-4 text-center">
-                      <AppMenuItem onClick={() => scrollToSection('commerce')} icon={<ShoppingCart className="mx-auto text-cyan-500" />} label="Online" />
+                      <AppMenuItem onClick={() => scrollToSection('commerce')} icon={<ShoppingCart className="mx-auto text-cyan-500" />} label="Commerce" />
                       <AppMenuItem onClick={() => scrollToSection('family')} icon={<HeartHandshake className="mx-auto text-purple-500" />} label="Family" />
                       <AppMenuItem onClick={() => scrollToSection('intelligence')} icon={<AreaChart className="mx-auto text-green-500" />} label="Intelligence" />
                       <AppMenuItem onClick={() => scrollToSection('hero')} icon={<BrainCircuit className="mx-auto text-blue-500" />} label="AI Engine" />
-                      <AppMenuItem onClick={() => scrollToSection('hero')} icon={<Sparkles className="mx-auto text-amber-500" />} label="What next?" />
+                      <AppMenuItem onClick={() => scrollToSection('hero')} icon={<Sparkles className="mx-auto text-amber-500" />} label="Stay Tuned" />
                     </div>
                   </motion.div>
                 )}
@@ -466,15 +447,15 @@ export default function Home() {
             >
               <ProductPillar
                 id="commerce"
-                title="AI Online Hub Universe"
-                description="Next-generation commerce echosystem transforms every click into a perfectly tailored experience. Powered by a deep artificial intelligence engine."
+                title="AI eCommerce Universe"
+                description="Redefining transactions with intelligent billing and hyperlocal e-commerce solutions."
                 gradient="bg-gradient-to-r from-cyan-500 to-blue-500"
                 onClick={scrollToSection}
               />
               <ProductPillar
                 id="family"
                 title="AI Family Universe"
-                description="A revolutionary connected echosystem for modern families. It harmonizes creative engagement with daily life."
+                description="A connected ecosystem for education, wellness, and family engagement."
                 gradient="bg-gradient-to-r from-purple-500 to-pink-500"
                 onClick={scrollToSection}
               />
@@ -491,8 +472,8 @@ export default function Home() {
           {/* --- DYNAMIC UNIVERSE SECTIONS --- */}
           <UniverseSection
             id="commerce"
-            title="AI Online Hub Universe"
-            description="Transforms every click into a perfectly tailored experience. Powered by a deep artificial intelligence engine, this next-generation commerce platform doesn't just sell—it anticipates your needs and delivers truly personalized shopping journeys, creating a frictionless experience for both businesses and consumers. It's more than e-commerce; it's intelligent commerce."
+            title="The AI eCommerce Universe"
+            description="We are building a revolutionary commerce platform that leverages AI to automate billing, optimize local logistics, and create personalized shopping experiences. It's more than e-commerce; it's intelligent commerce."
             gradient="bg-gradient-to-r from-cyan-500 to-blue-500"
           >
             <div className="w-full h-auto">
@@ -503,7 +484,7 @@ export default function Home() {
           <UniverseSection
             id="family"
             title="The AI Family Universe"
-            description="Imagine a world where technology nurtures family bonds. Our AI Family Hub Universe is a revolutionary connected platform for modern families. It harmonizes creative engagement with daily life, offering real-time insights to empower the holistic development of children like our digital companions, Janvi and Gagan."
+            description="Imagine a world where technology nurtures family bonds. Our Family Universe connects kids' education, fitness, and creative pursuits, offering parents and schools valuable insights for holistic development."
             gradient="bg-gradient-to-r from-purple-500 to-pink-500"
           >
              <div className="w-full h-auto">
@@ -513,7 +494,7 @@ export default function Home() {
 
           <UniverseSection
             id="intelligence"
-            title="AI Intelligence Universe"
+            title="The AI Intelligence Universe"
             description="Go beyond simple monitoring. Our platform provides an artificial intelligence-based ecosystem with a machine learning-powered real-time pulse, offering predictive insights to ensure your digital services are always performing at their peak."
             gradient="bg-gradient-to-r from-green-500 to-teal-500"
           >

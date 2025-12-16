@@ -1,0 +1,15 @@
+aiuniglobal-v1 company name : AI Universe Global Private Limited
+
+can we have more professional look and white background like google try to include the Chatbot icon buttom right and add some static question and answers related to our product and ensure it should have send button and speaker, audio mic, like and dis like button next to send button (don't keep label and ensure small buttons only used)
+
+when user try to type it shoudl auto populate with question which are loaded and trained via js file. once user select the question it shoud give limited information without disclosing our whole product idea but should answar their question with ai based Intelligent engine.
+
+for below content, ensure universe for each product like Family universe, then when they click on each it should slow down with magical scroll down to take them to world of animation and should have a attrative image with robotic kids name them Janvi Gagan and real time robot human interaction
+
+AI-Powered Commerce: Redefining transactions with intelligent billing and hyperlocal e-commerce solutions.
+
+The Family Universe: A connected ecosystem for education, wellness, and family engagement, powered by real-time insights.
+
+Predictive Observability: Proactive anomaly detection and root cause analysis for complex digital systems. (Predictive Observability name generic need to change and don't mention more details like root caseu and anomaly but instead like artificial intelligence based echo system with machine learning based realtime pulse...etc)
+
+Company name make it top left with powerful magical effect
